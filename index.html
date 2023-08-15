@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Modal</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+<body>
+
+  <button class="modal-btn" id="openModalBtn">Open Video Modal</button>
+  <div id="videoModal" class="modal">
+    <button class="close" id="closeVideoModal">X</button>
+    <div class="video-container">
+      <div id="videoFrame"></div>
+    <div>
+      <button id="playBtn">Play</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="backwardBtn"><</button>
+      <button id="forwardBtn">></button>
+      <button id="plusVolumeBtn">+</button>
+      <button id="minusVolumeBtn">-</button>
+    </div>
+    <select class="video-select" id="speedSelect">
+      <option value="1">Normal</option>
+      <option value="1.5">1.5x Speed</option>
+      <option value="2">2x Speed</option>
+    </select>
+  </div>
+</div>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
